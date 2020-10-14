@@ -33,6 +33,6 @@ app.get('/profile/:id',(req,res)=>{profile.handleProfile(req,res,db)})
 app.put('/image',(req,res)=>{image.handleImage(req,res,db)})
 app.post('/image/api',(req,res)=>{image.handleApi(req,res)})
 
-app.listen(3001, ()=>{
-	console.log('server running on 3001');
+app.listen(process.env.PORT || 3001, ()=>{
+	console.log(`server running on ${process.env.PORT}`);	
 })
