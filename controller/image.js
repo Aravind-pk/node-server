@@ -14,7 +14,7 @@ const handleImage =(req,res,db)=>{
 }
 
 const app = new Clarifai.App({
- apiKey: '63f683f8bdba4f68a739ecad0b7f4877'
+ apiKey: 'API KEY'
 });
 
 const handleApi =(req,res)=>{
